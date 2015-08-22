@@ -7,6 +7,9 @@
     "url": "https://github.com/nathanfaucett/focus_node.git"
   },
   "main": "src/index.js",
+  "scripts": {
+    "test-browser-local": "zuul --local 8080 --ui tape -- ./test"
+  },
   "keywords": [
     "focus_node",
     "focus_node.js"
@@ -15,11 +18,13 @@
   "license": "BSD-2-Clause",
   "readmeFilename": "README.md",
   "devDependencies": {
+    "blur_node": "git://github.com/nathanfaucett/blur_node.git",
+    "get_active_element": "git://github.com/nathanfaucett/get_active_element.git",
     "grunt": "^0.4.5",
     "grunt-contrib-jshint": "^0.10.0",
     "grunt-jsbeautifier": "^0.2.7",
-    "mocha": "^2.1.0",
-    "zombie": "^2.5.1"
+    "tape": "^4.2.0",
+    "zuul": "^3.3.0"
   },
   "dependencies": {
     "is_node": "git://github.com/nathanfaucett/is_node"

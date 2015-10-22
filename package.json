@@ -15,7 +15,7 @@
     "focus_node.js"
   ],
   "author": "Nathan Faucett",
-  "license": "BSD-2-Clause",
+  "license": "MIT",
   "readmeFilename": "README.md",
   "devDependencies": {
     "blur_node": "git://github.com/nathanfaucett/blur_node.git",

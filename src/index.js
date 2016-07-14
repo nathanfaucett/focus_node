@@ -1,4 +1,4 @@
-var isNode = require("is_node");
+var isNode = require("@nathanfaucett/is_node");
 
 
 module.exports = focusNode;

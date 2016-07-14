@@ -1,6 +1,4 @@
 var tape = require("tape"),
-    blurNode = require("blur_node"),
-    getActiveElement = require("get_active_element"),
     focusNode = require("..");
 
 
@@ -9,10 +7,10 @@ tape("focusNode(node : Node) should focus element without throwing an error in i
 
     document.body.appendChild(input);
 
-    blurNode(input);
+    input.blur();
     focusNode(input);
 
-    assert.equal(input, getActiveElement());
+    assert.equal(input, document.activeElement);
 
     assert.end();
 });

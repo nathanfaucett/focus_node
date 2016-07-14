@@ -1,5 +1,5 @@
 {
-  "name": "focus_node",
+  "name": "@nathanfaucett/focus_node",
   "version": "0.0.1",
   "description": "focus nodes without throwing an error in ie browser and node.js",
   "repository": {
@@ -8,7 +8,7 @@
   },
   "main": "src/index.js",
   "scripts": {
-    "test-browser-local": "zuul --local 8080 --ui tape -- ./test"
+    "test-browser-local": "zuul --local 9999 --ui tape -- ./test"
   },
   "keywords": [
     "focus_node",
@@ -18,15 +18,13 @@
   "license": "MIT",
   "readmeFilename": "README.md",
   "devDependencies": {
-    "blur_node": "git://github.com/nathanfaucett/blur_node.git",
-    "get_active_element": "git://github.com/nathanfaucett/get_active_element.git",
-    "grunt": "^0.4.5",
-    "grunt-contrib-jshint": "^0.10.0",
-    "grunt-jsbeautifier": "^0.2.7",
+    "grunt": "^1.0.1",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-jsbeautifier": "^0.2.13",
     "tape": "^4.2.0",
     "zuul": "^3.3.0"
   },
   "dependencies": {
-    "is_node": "git://github.com/nathanfaucett/is_node"
+    "@nathanfaucett/is_node": "^0.0.1"
   }
 }
